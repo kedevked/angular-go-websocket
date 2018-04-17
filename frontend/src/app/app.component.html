@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-header">
+    <label> Enter text
+      <input type="text" #message>ase
+    </label>
+    <button class="btn btn-primary" (click)="sendMessage(message.value)">send</button>
+  </div>
+  <ul class="list-group list-group-flush" *ngFor="let message of messages">
+    <li *ngIf="message" class="list-group-item">{{message}}</li>
+  </ul>
+</div>
+
+
